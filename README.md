@@ -1,1 +1,1 @@
-# lp-spotify
+# Réplica da LP do Spotify
