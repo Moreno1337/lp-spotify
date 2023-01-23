@@ -1,0 +1,59 @@
+.banner-dois {
+    font-family: var(--rubik);
+
+    background: url(https://www.scdn.co/i/free/lets-play.svg) center -500px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -16%, rgb(240, 55, 166)) rgb(108, 14, 224);
+    height: 450px;
+    text-align: center;
+}
+
+.banner-dois__titulo {
+    color: var(--branco);
+    font-size: 75px;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1199px) {
+    .banner-dois__container {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .banner-dois__titulo {
+        padding-top: 125px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .banner-dois {
+        height: 375px;
+        background: url(https://www.scdn.co/i/free/lets-play.svg) center center / 100% no-repeat, linear-gradient(-155deg, rgb(108, 14, 224) 55%, rgb(240, 55, 166) 115%) rgb(108, 14, 224);
+    }
+
+    .banner-dois__container {
+        width: 750px;
+    }
+
+    .banner-dois__titulo {
+        font-size: 57px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner-dois__container {
+        width: 95vw;
+    }
+    
+    .banner-dois__titulo {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+        .banner-dois__titulo {
+            padding-top: 80px;
+        }
+}

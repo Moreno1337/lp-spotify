@@ -1,0 +1,251 @@
+.rodape {
+    background-color: var(--preto);
+    height: 550px;
+
+    color: var(--branco);
+    font-family: var(--rubik);
+}
+
+.rodape__container-superior {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.rodape__links-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 670px;
+    padding-left: 60px;
+}
+
+.rodape__logo {
+    width: 125px;
+}
+
+.rodape__coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__titulo {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #AAA;
+    margin-bottom: 16px;
+}
+
+.rodape__links {
+    text-decoration: none;
+    color: var(--branco);
+
+    margin: 13px 0;
+}
+
+.rodape__links:hover {
+    color: var(--verde-hover);
+}
+
+.rodape__midias {
+    display: flex;
+    justify-content: flex-end;
+    width: 375px;
+}
+
+.rodape__midias-links {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 500px;
+    margin-left: 20px;
+}
+
+.logo--insta {
+    background: url(../img/instagram.svg) no-repeat center / 60% 60%, #333;
+}
+
+.logo--twitter {
+    background: url(../img/twitter.svg) no-repeat center / 60% 60%, #333;
+}
+
+.logo--facebook {
+    background: url(../img/facebook.svg) no-repeat center / 60% 60%, #333;
+}
+
+.logo--insta:hover {
+    background: url(../img/instagram-verde.svg) no-repeat center / 60% 60%, #333;
+}
+
+.logo--twitter:hover {
+    background: url(../img/twitter-verde.svg) no-repeat center / 60% 60%, #333;
+}
+
+.logo--facebook:hover {
+    background: url(../img/facebook-verde.svg) no-repeat center / 60% 60%, #333;
+}
+
+.rodape__container-inferior {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.rodape__container-inferior-interno-um {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.rodape__business-links {
+    text-decoration: none;
+    font-size: 12px;
+    color: #999;
+}
+
+.rodape__business-links:hover {
+    color: var(--verde-hover);
+}
+
+.rodape__container-inferior-interno-dois {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.local-de-acesso:before {
+    content: '';
+    background: url(../img/globo.svg) no-repeat center / 100% 100%;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.rodape__copyright {
+    font-size: 12px;
+    color: #999;
+}
+
+@media screen and (max-width: 1199px) {
+    .rodape__container-superior {
+        width: 900px;
+    }
+
+    .rodape__container-inferior {
+        width: 900px;
+    }
+
+    .rodape__links-container {
+        width: 72%;
+    }
+
+    .rodape__midias {
+        width: 28%;
+    }
+
+    .rodape__container-inferior-interno-um {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .rodape {
+        height: 650px;
+    }
+    
+    .rodape__container-superior {
+        width: 750px;
+        flex-direction: column;
+        padding: 50px 0 30px;
+    }
+
+    .rodape__logo {
+        width: 90px;
+        padding-bottom: 50px;
+    }
+
+    .rodape__links-container {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .rodape__midias {
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+
+    .rodape__midias-links {
+        margin-left: 0;
+        margin-right: 20px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .rodape__container-inferior {
+        width: 750px;
+    }
+
+    .rodape__container-inferior-interno-um {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .rodape {
+        height: 1020px;
+    }
+
+    .rodape__container-superior, .rodape__container-inferior {
+        width: 95vw;
+    }
+
+    .rodape__logo {
+        padding-bottom: 0;
+    }
+    
+    .rodape__links-container {
+        flex-direction: column;
+    }
+
+    .rodape__coluna {
+        margin-top: 50px;
+    }
+
+    .rodape__midias {
+        width: 100%;
+    }
+
+    .rodape__container-inferior-interno-um {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .rodape__business-links {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .rodape {
+        height: 1090px;
+    }
+
+    .rodape__container-inferior-interno-um {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rodape__business-links {
+        margin-bottom: 15px;
+    }
+}

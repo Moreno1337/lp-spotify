@@ -1,0 +1,44 @@
+.banner {
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+
+    width: 100%;
+    height: 494px;
+
+    font-family: var(--rubik);
+    text-align: center;
+}
+
+.banner__texto {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--branco);
+    line-height: 1.2;
+}
+
+.banner__texto-um {
+    padding-top: 190px;
+}
+
+@media screen and (max-width: 990px) {
+    .banner {
+        height: 250px;
+    }
+
+    .banner__texto {
+        font-size: 35px;
+    }
+
+    .banner__texto-um {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner {
+        padding: 0 20px;
+    }
+
+    .banner__texto {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --verde-hover: #1ed760;
+
+    --rubik: 'Rubik', sans-serif;
+}
+
+.esconde {
+    display: none;
+}

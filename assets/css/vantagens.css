@@ -1,0 +1,166 @@
+.vantagens {
+    font-family: var(--rubik);
+}
+
+.vantagens__container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+.vantagens__titulo {
+    text-align: center;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 46px;
+
+    margin-bottom: 72px;
+}
+
+.vantagens__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.vantagens__item-lista {
+    display: block;
+    width: 270px;
+}
+
+.vantagens__imagem {
+    display: block;
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin: 0 auto 40px;
+
+    width: 142px;
+    height: 142px;
+}
+
+.vantagens__imagem--play {
+    background-image: url(https://i.scdn.co/image/ab671c3d0000f430678067184805befd38aa0f57);
+}
+
+.vantagens__imagem--playlist {
+    background-image: url(https://i.scdn.co/image/ab671c3d0000f430a6f822749d5c25c32ee31d66);
+}
+
+.vantagens__imagem--coracao {
+    background-image: url(https://i.scdn.co/image/ab671c3d0000f430eb43023b5332389f5094530d);
+}
+
+.vantagens__imagem--raio {
+    background-image: url(https://i.scdn.co/image/ab671c3d0000f4309430062bc28461dc8fbde6bc);
+}
+
+.vantagens__texto {
+    text-align: center;
+
+    display: block;
+    width: 100%;
+
+    margin: 16px 0;
+}
+
+.vantagens__texto-titulo {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3em;
+
+    margin-bottom: 10px;
+}
+
+.vantagens__texto-descricao {
+    margin: 0 auto;
+
+    width: 85%;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+    .vantagens__container {
+        width: 900px;
+    }
+
+    .vantagens__lista {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        width: 900px;
+    }
+
+    .vantagens__item-lista {
+        display: flex;
+        align-items: center;
+        width: 420px;
+    }
+
+    .vantagens__item-lista:nth-child(2n) {
+        margin-left: 20px;
+    }
+
+    .vantagens__imagem {
+        margin-bottom: 0;
+        background-position: center;
+    }
+
+    .vantagens__texto {
+        text-align: start;
+        margin-left: 15px;
+    }
+
+    .vantagens__texto-descricao {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .vantagens__container, .vantagens__lista {
+        width: 750px;
+    }
+
+    .vantagens__item-lista {
+        width: 350px;
+    }
+
+    .vantagens__imagem {
+        background-position: center top;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .vantagens__container {
+        padding: 20px 10px;
+        width: 95vw;
+    }
+
+    .vantagens__titulo {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .vantagens__lista {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .vantagens__item-lista {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .vantagens__item-lista:nth-child(2n) {
+        margin-left: 0;
+    }
+
+    .vantagens__imagem {
+        background-position: center;
+    }
+}
